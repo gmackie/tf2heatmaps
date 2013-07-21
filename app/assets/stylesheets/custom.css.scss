@@ -1,5 +1,24 @@
 @import "bootstrap";
+@charset "utf-8";
 
+body {
+  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+  background: #2B2724;
+  margin: 0;
+  /* fix this */
+  padding-top: 0px;
+  color: #000;
+}
+
+@font-face {
+    font-family: "TF2 Build";
+    src: url("tf2build.ttf");
+}
+
+@font-face {
+    font-family: "TF2 Secondary";
+    src: url("tf2secondary.ttf");
+}
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -16,9 +35,7 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  padding-top: 60px;
-}
+
 
 section {
   overflow: auto;
@@ -39,6 +56,10 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 1px #2B2724;
+  font-family: "TF2 Build";
+  font-weight: normal;
 }
 
 h1 {
@@ -81,6 +102,28 @@ p {
   }
 }
 
+/*two defs, one logo/title */
+#title {
+  text-transform: uppercase;
+  font-family: "TF2 Build";
+  font-weight: normal;
+  text-shadow: 0px 0px 1px #2B2724;
+  color: #766b5e;
+  font-size: 48px;
+  float: left;
+}
+
+#header {
+    height: 90px;
+    padding-top: 15px;
+  padding-bottom: 10px;
+    margin-bottom: 15px;
+    background-color: #2b2724;
+    border-bottom: 4px solid #766860;
+    background-image: url('bg_header.jpg');
+    background-repeat: repeat-x
+}
+
 /* footer */
 
 footer {
@@ -105,6 +148,101 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+/* yeah and stuff */
+#steam
+{
+  background-color:#383635;
+  width:auto;
+  height:auto;
+  padding:5px;
+  border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#onlinetext
+{
+  width:auto;
+  color:#80b2d9;
+  font-size:14px;
+  font-family:Arial, Helvetica, sans-serif;
+  float:left;
+}
+#onlineimage
+{
+  float:left;
+  width:50px;
+  height:50px;
+  border-width:medium;
+  border-color:#80b2d9;
+  margin-right:10px;
+  border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#alltabs
+{
+  width: inherit;
+  height:auto;
+  background-color: #1e1b19;
+  margin: 0 auto;
+}
+#tabs {
+  margin-top:8px;
+    float:left;
+  font-family: "TF2 Secondary";
+  color: #fbeccb;
+}
+
+.container {
+  
+  /*background: #2B2724;*/
+  margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+a.tab {
+    background-color: #1e1b19;
+    text-shadow: 0px 0px 1px #1e1b19;
+    color: #8b6648;
+    padding: 10px 20px;
+    margin-left: 1px;
+  margin-bottom: 5px;
+    font-size: 22px;
+    font-family: "TF2 Build";
+    border: none;
+    text-decoration :none;
+}
+
+a#left_tab
+{
+  -webkit-border-top-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#right_tab
+{
+  float:left;
+  background-color: #1e1b19;
+  text-shadow: 0px 0px 1px #1e1b19;
+  color: #8b6648;
+  padding: 7px 10px 6px 10px;
+  margin-top:1px;
+  margin-left: 1px;
+  font-size: 22px;
+  font-family: "TF2 Build";
+  border: none;
+  text-decoration :none;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 /* miscellaneous */
@@ -220,7 +358,7 @@ input {
 
 /* microposts */
 
-.microposts {
+.maps {
   list-style: none;
   margin: 10px 0 0 0;
   

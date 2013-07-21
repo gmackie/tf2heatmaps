@@ -1,31 +1,39 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "sample app", root_path, id: "logo" %>
-      <nav>
-        <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Help", help_path %></li>
-          <% if signed_in? %>
-            <li><%= link_to "Users", users_path %></li>
-            <li id="fat-menu" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Account <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><%= link_to "Profile", current_user %></li>
-                <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-                <li class="divider"></li>
-                <li>
-                  <%= link_to "Sign out", signout_path, method: "delete" %>
-                </li>
-              </ul>
-            </li>
-          <% else %>
-            <li><%= link_to "Sign in", signin_path %></li>
-          <% end %>
-        </ul>
-      </nav>
+<header id="header">
+  <div class="container">
+    <img src="/images/shit_logo.png" height="80px" style="float:left"></img>
+    <div id="title">tf2 <span style="color:#D36623">heat</span>maps.net</div>
+    <div id="steam" style="float:right">
+      <img src="anon.jpg" id="onlineimage"></img>
+      <div id="onlinetext">
+        Anonymous
+        <span style="color:#F0F0F0">0</span><span style="color:#B0B0B0"> notifications</span>
+      </div>
     </div>
+    <nav>
+      <ul class="nav pull-right">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+        <% if signed_in? %>
+          <li><%= link_to "Users", users_path %></li>
+          <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Sign out", signout_path, method: "delete" %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+         <li><%= link_to "Sign in", signin_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+    
   </div>
 </header>
+

@@ -1,0 +1,301 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #2B2724;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+@font-face {
+    font-family: "TF2 Build";
+    src: url("tf2build.ttf");
+}
+
+@font-face {
+    font-family: "TF2 Secondary";
+    src: url("tf2secondary.ttf");
+}
+
+ #title {
+    text-transform: uppercase;
+    font-family: "TF2 Build";
+    font-weight: normal;
+	text-shadow: 0px 0px 1px #2B2724;
+    color: #766b5e;
+    font-size: 48px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+	text-shadow: 0px 0px 1px #2B2724;
+    font-family: "TF2 Build";
+    font-weight: normal;
+}
+ 
+h1 {
+    color: #766b5e;
+    font-size: 38px;
+}
+
+h2 {
+    color: #FDFDFD;
+    font-size: 28px;
+}
+
+h3 {
+    color: #FDFDFD;
+    font-size: 48px;
+}
+
+a img { 
+	border: none;
+}
+
+.textbox {
+	background-color: #988678;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	border: none;
+	color: #FFFFFF;
+}
+/*.search {
+	margin-top: 15px;
+	padding-top: 15px;
+}*/
+.links {
+	text-align:center;
+	text-decoration:none;
+	padding-bottom: 20px;
+}
+#serverName {
+    margin-left: 30px;
+	margin-bottom: 15px;
+    font-size: 18px;
+    color: #c9bca3;
+    font-family: "TF2 Secondary";
+}
+.infobox {
+	/*padding-right: 30px;*/
+	margin-left: 30px;
+	margin-right: 30px;
+    width: 300px;
+    height: 205px;
+    background-color: #3c352f;
+	text-shadow: 0px 0px 1px #3c352f;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    /*padding: 10px;*/
+
+    /* overflow: auto;*/
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+/*a:link {
+	color: #D36623;
+	 /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification 
+}*/
+a:visited {
+	color: #6E6C64;
+
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	
+	background: #2B2724;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.dialogLink, .button a{
+    background-color: #fbeccb;
+    text-shadow: 0px 0px 1px #fbeccb;
+    color: #776a61;
+    padding: 12px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "TF2 Build";
+    border: none;
+    text-decoration :none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.smallButton {
+    background-color: #fbeccb;
+    text-shadow: 0px 0px 1px #fbeccb;
+    color: #776a61;
+    padding: 4px 8px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: "TF2 Build";
+    border: none;
+    text-decoration :none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#user {
+    margin-top: 20px;
+    float: right;
+	font-family: "TF2 Secondary";
+	color: #fbeccb;
+}
+
+.dialogLink:hover, .smallButton:hover {
+    background-color: #b4510e;
+    text-shadow: 0px 0px 1px #b4510e;
+    color: #2a2725
+}
+
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+.sidebar1 {
+	float: right;
+	width: 360px;
+	padding-bottom: 10px;
+	background-color: #2B2724;
+}
+.content {
+	width: 700px;
+	float: right;
+	height: 480px;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+
+div.panel_container {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.panel_container h2 {
+	font-family:'TF2 Build', Arial, Helvetica, sans-serif;
+	color:#f8e9c8;
+	font-size:42px;
+	text-align:center;
+	margin-top:7px;
+	margin-bottom:0px;
+}
+	
+
+div.panel_left, div.panel_right {
+	background-color:#3d352f;
+	width:480px;
+	-moz-border-radius:10px;
+  	-webkit-border-radius:10px;
+}
+
+div.panel_left {
+	float:left;
+}
+
+div.panel_right {
+	float:right;
+}
+
+/*Tables*/
+.table_cont {
+	width:425px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.other_line {
+	background-color:#51473f;
+}
+h3.table_header_right, h3.table_header_left {
+	text-align:left;
+	color:#988678;
+	font-family:'TF2 Build', Arial, Helvetica, sans-serif;
+	font-size:27pt;
+	margin-bottom:12px;
+	margin-top:0px;
+}
+
+h3.table_header_left {
+	text-align:center;
+}
+
+td.table_row_left, td.table_row_right {
+	font-family: Helvetica, Arial,sans-serif;
+	font-size:12pt;
+	color:#ba9f88;
+}
+
+td.table_row_right {
+	text-align:center;
+	color:#f8e9c8;	
+}
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+#header {
+    height: 90px;
+    padding-top: 15px;
+	padding-bottom: 10px;
+    margin-bottom: 15px;
+    background-color: #2b2724;
+    border-bottom: 4px solid #766860;
+    background-image: url('bg_header.jpg');
+    background-repeat: repeat-x
+}
+/* ~~ The footer ~~ */
+.footer {
+   height: 120px;
+   position: relative;
+   border-top: 2px solid #766860;
+   background-image: url('bg_footer.jpg');
+   background-repeat: repeat-x;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
